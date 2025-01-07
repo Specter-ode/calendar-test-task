@@ -46,7 +46,7 @@ const Cell = styled.div<{ isWeekView: boolean; isCurrentPeriod: boolean; isDragg
 	padding: 10px 0;
 	display: flex;
 	flex-direction: column;
-	gap: 4px;
+	gap: 6px;
 	border-radius: 5px;
 	&:hover ${AddButton} {
 		opacity: 1;
@@ -65,7 +65,7 @@ const DayHeader = styled.div`
 const Content = styled.div`
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
+	gap: 6px;
 	padding-left: 10px;
 	padding-right: 5px;
 	overflow-y: overlay;

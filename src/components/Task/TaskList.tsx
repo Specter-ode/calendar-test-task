@@ -30,7 +30,7 @@ const TaskList: React.FC<Props> = ({ tasks, taskInFormAction, handleOpenEditTask
 		<List>
 			{tasks?.map((task, index) => {
 				const isInEdit = taskInFormAction?.id === task.id;
-				const isHide = shouldHideTask(task.name);
+				const isHide = !isInEdit && shouldHideTask(task.name);
 				return (
 					<TaskItem
 						key={task.id}
