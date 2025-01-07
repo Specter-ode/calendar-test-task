@@ -21,7 +21,7 @@ export const createCalendarDays = (
 			date: toISODateString(date),
 			tasks: [],
 			holidays: [],
-			isDisabled: false,
+			isCurrentPeriod: true,
 		}));
 	}
 
@@ -34,7 +34,7 @@ export const createCalendarDays = (
 		date: toISODateString(date),
 		tasks: [],
 		holidays: [],
-		isDisabled: date.getMonth() !== selectedDate.month,
+		isCurrentPeriod: date.getMonth() === selectedDate.month,
 	}));
 };
 

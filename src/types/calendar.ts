@@ -18,7 +18,7 @@ export type IDay = {
 	date: ISODateString;
 	tasks: ITask[];
 	holidays: IHoliday[];
-	isDisabled: boolean;
+	isCurrentPeriod: boolean;
 };
 
 export interface ISelectedDate {

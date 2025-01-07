@@ -35,13 +35,15 @@ const AddButton = styled.button`
 	transition: all 0.3s ease;
 `;
 
-const Cell = styled.div<{ isWeekView: boolean; isDisabled: boolean; isDraggingOver: boolean }>`
+const Cell = styled.div<{ isWeekView: boolean; isCurrentPeriod: boolean; isDraggingOver: boolean }>`
 	position: relative;
-	background-color: ${({ isDraggingOver }) => (isDraggingOver ? '#dddee7' : '#e9ebef')};
+	background-color: ${({ isDraggingOver, isCurrentPeriod }) =>
+		isDraggingOver
+			? `rgba(221, 222, 231, ${!isCurrentPeriod ? 0.5 : 1})`
+			: `rgba(233, 235, 239, ${!isCurrentPeriod ? 0.5 : 1})`};
 	height: ${({ isWeekView }) => (isWeekView ? '100%' : '180px')};
 	min-width: 180px;
 	padding: 10px 0;
-	opacity: ${({ isDisabled }) => (isDisabled ? 0.5 : 1)};
 	display: flex;
 	flex-direction: column;
 	gap: 4px;
@@ -75,14 +77,17 @@ const Content = styled.div`
 		width: 5px;
 	}
 `;
-const DayDate = styled.span`
+const DayDate = styled.span<{
+	isCurrentPeriod: boolean;
+}>`
 	font-size: 14px;
 	font-weight: 700;
 	color: #2d3748;
+	opacity: ${({ isCurrentPeriod }) => (isCurrentPeriod ? 1 : 0.5)};
 `;
 
 export const CalendarDay: React.FC<IProps> = ({ day, isDragging }) => {
-	const { date, tasks, holidays, isDisabled } = day;
+	const { date, tasks, holidays, isCurrentPeriod } = day;
 	const calendarType = useAppSelector(getCalendarType);
 	const isWeekView = calendarType === 'Week';
 	const [taskInFormAction, setTaskInFormAction] = useState<ITask | null>(null);
@@ -123,12 +128,12 @@ export const CalendarDay: React.FC<IProps> = ({ day, isDragging }) => {
 			{(provided, snapshot) => (
 				<Cell
 					isWeekView={isWeekView}
-					isDisabled={isDisabled}
+					isCurrentPeriod={isCurrentPeriod}
 					isDraggingOver={snapshot.isDraggingOver}
 				>
 					<DayHeader>
-						<DayDate>{displayDate}</DayDate>
-						{!isDisabled && taskFormMode === TaskFormModeType.Closed && !isDragging && (
+						<DayDate isCurrentPeriod={isCurrentPeriod}>{displayDate}</DayDate>
+						{taskFormMode === TaskFormModeType.Closed && !isDragging && (
 							<AddButton onClick={handleOpenAddTaskForm}>
 								<PlusIcon width='16' height='16' />
 							</AddButton>
