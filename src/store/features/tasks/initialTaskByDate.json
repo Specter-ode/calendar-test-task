@@ -1,0 +1,166 @@
+{
+	"2024-12-05": [
+		{
+			"id": "task1",
+			"name": "Annual Report Preparation",
+			"date": "2024-12-05",
+			"position": 1
+		},
+		{
+			"id": "task2",
+			"name": "Create a Comprehensive Presentation for Stakeholders",
+			"date": "2024-12-05",
+			"position": 2
+		},
+		{
+			"id": "task3",
+			"name": "Team Meeting to Discuss Roadmap",
+			"date": "2024-12-05",
+			"position": 3
+		}
+	],
+	"2024-12-15": [
+		{
+			"id": "task4",
+			"name": "Corporate Holiday Party",
+			"date": "2024-12-15",
+			"position": 1
+		},
+		{
+			"id": "task5",
+			"name": "Prepare and Wrap Christmas Gifts for Staff",
+			"date": "2024-12-15",
+			"position": 2
+		},
+		{
+			"id": "task6",
+			"name": "Order Catering for Upcoming Corporate Event",
+			"date": "2024-12-15",
+			"position": 3
+		},
+		{
+			"id": "task7",
+			"name": "Office Decoration for the Festive Season",
+			"date": "2024-12-15",
+			"position": 4
+		}
+	],
+	"2024-12-25": [
+		{
+			"id": "task8",
+			"name": "Host a Traditional Christmas Dinner",
+			"date": "2024-12-25",
+			"position": 1
+		},
+		{
+			"id": "task9",
+			"name": "Send Holiday Greetings to Colleagues",
+			"date": "2024-12-25",
+			"position": 2
+		},
+		{
+			"id": "task10",
+			"name": "Meet Critical Deadlines Before Holidays",
+			"date": "2024-12-25",
+			"position": 3
+		}
+	],
+	"2025-01-10": [
+		{
+			"id": "task11",
+			"name": "Quarterly Planning Session for Q1",
+			"date": "2025-01-10",
+			"position": 1
+		},
+		{
+			"id": "task12",
+			"name": "Department Meeting to Set New Goals",
+			"date": "2025-01-10",
+			"position": 2
+		},
+		{
+			"id": "task13",
+			"name": "Update Key Performance Indicators for Team Members",
+			"date": "2025-01-10",
+			"position": 3
+		}
+	],
+	"2025-01-20": [
+		{
+			"id": "task14",
+			"name": "Code Review of New Features",
+			"date": "2025-01-20",
+			"position": 1
+		},
+		{
+			"id": "task15",
+			"name": "Comprehensive Testing of Major Updates",
+			"date": "2025-01-20",
+			"position": 2
+		},
+		{
+			"id": "task16",
+			"name": "Deploy the Latest Version to Production",
+			"date": "2025-01-20",
+			"position": 3
+		},
+		{
+			"id": "task17",
+			"name": "Review and Update Documentation",
+			"date": "2025-01-20",
+			"position": 4
+		},
+		{
+			"id": "task18",
+			"name": "Collect and Address Client Feedback",
+			"date": "2025-01-20",
+			"position": 5
+		}
+	],
+	"2025-02-05": [
+		{
+			"id": "task19",
+			"name": "Kickoff Meeting for New Project",
+			"date": "2025-02-05",
+			"position": 1
+		},
+		{
+			"id": "task20",
+			"name": "Task Allocation and Resource Assignment",
+			"date": "2025-02-05",
+			"position": 2
+		},
+		{
+			"id": "task21",
+			"name": "Setup Development and Testing Environments",
+			"date": "2025-02-05",
+			"position": 3
+		}
+	],
+	"2025-02-14": [
+		{
+			"id": "task22",
+			"name": "Finalize Release for Product Launch",
+			"date": "2025-02-14",
+			"position": 1
+		},
+		{
+			"id": "task23",
+			"name": "Thorough Bug Testing Before Deployment",
+			"date": "2025-02-14",
+			"position": 2
+		},
+		{
+			"id": "task24",
+			"name": "Update Software Dependencies and Packages",
+			"date": "2025-02-14",
+			"position": 3
+		},
+		{
+			"id": "task25",
+			"name": "Conduct Comprehensive Code Review",
+			"date": "2025-02-14",
+			"position": 4
+		}
+	]
+}
